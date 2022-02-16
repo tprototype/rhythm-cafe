@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/static/css/style.css">
+</head>
+<body class="font-sans">
+  <nav class="flex items-center justify-around flex-wrap p-6 bg-teal-100 rounded-b-2xl shadow-slate-300 shadow-lg">
+    <a href="index.html"><h1 class="font-bold text-3xl cursor-pointer hover:text-slate-800">Rhythm Cafe</h1></a>
+    <div class="block lg:hidden">
+        <button onclick="toggle()" class="flex items-center px-3 py-2 border rounded ">
+          <svg class="menu fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button>
+      </div>
+      <div id="menu" class="w-full lg:flex lg:items-center lg:w-auto space-x-5 hidden">
+        <div class="space-x-10 text-xl" >
+          <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-slate-800">
+            HOME
+          </a>
+          <a href="products.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-slate-800">
+            PRODUCTS
+          </a>
+          <a href="about.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-slate-800">
+            ABOUT
+          </a>
+          <a href="contact.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-slate-800">
+            CONTACT
+          </a>
+        </div>
+        
+      </div>
+</nav>
+    <br>
+    <div class="flex">
+        <div class="grid grid-cols-2 content-start w-1/2">
+          <div class="w-4/5 h-28 lg:w-4/5 lg:h-80 bg-cover bg-center lg:bg-contain rounded-xl overflow-hidden shadow-2xl m-4" style="background-image:url('static/img/hbname.png');">
+          </div>
+          <div class="w-4/5 h-28 lg:h-80 bg-cover rounded-xl overflow-hidden shadow-2xl m-4" style="background-image:url('static/img/2storeycake.jpg');">
+          </div>
+          <div class="w-4/5 h-28 lg:h-80 bg-cover rounded-xl overflow-hidden shadow-2xl m-4" style="background-image:url('static/img/cupcake.jpg');">
+          </div>
+          <div class="w-4/5 h-28 lg:h-80 bg-cover rounded-xl overflow-hidden shadow-2xl m-4" style="background-image:url('static/img/coffee.jpeg');">
+          </div> 
+        </div>
+        
+        <div class="w-1/2 mx-2 my-4 lg:mx-12  p-3 lg:my-32 lg:p-10 border-2 h-96">
+          <h1 class="text-lg  lg:text-2xl font-semibold">About Rhythm Cafe</h1>
+          <p class="text-sm mt-2 lg:text-xl lg:mt-5 font-serif">the place to call for your cake order and also a junction to have some coffee time with some bakery item.</p>
+          <p class="mt-2 text-xs lg:text-base lg:mt-5 ">Our classic treats are made daily by in-house bakers, using the freshest & finest ingredients. Come visit us for delicious, sentimental sweets and a friendly, old-fashioned neighborhood experience.</p>
+        </div>
+      </div>
+    </div>

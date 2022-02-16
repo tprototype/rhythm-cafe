@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/static/css/style.css">
+</head>
+<body class="font-sans">
+  <nav class="flex items-center justify-around flex-wrap p-6 bg-teal-100 rounded-b-2xl shadow-slate-300 shadow-lg">
+    <a href="index.html"><h1 class="font-bold text-3xl cursor-pointer hover:text-slate-800">Rhythm Cafe</h1></a>
+    <div class="block lg:hidden">
+        <button onclick="toggle()" class="flex items-center px-3 py-2 border rounded ">
+          <svg class="menu fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button>
+      </div>
+      <div id="menu" class="w-full lg:flex lg:items-center lg:w-auto space-x-5 hidden">
+        <div class="space-x-10 text-xl" >
+          <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-slate-800">
+            HOME
+          </a>
+          <a href="products.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-slate-800">
+            PRODUCTS
+          </a>
+          <a href="about.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-slate-800">
+            ABOUT
+          </a>
+          <a href="contact.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-slate-800">
+            CONTACT
+          </a>
+        </div>
+        
+      </div>
+</nav>
+    <br>
+    <main class="font-sans">
+        <div class="h-20 py-10 lg:h-56 lg:py-16 text-center font-bold text-xl lg:text-5xl">
+            PRODUCTS
+        </div>
+        <div class="grid grid-cols-3">
+            <div class="m-4">
+                <img class="" src="static/img/cake.jpg" alt="">
+                <br>
+                <div class="text-xl text-center">
+                    CAKE NAME
+                </div>
+            </div>
+            <div class="m-4">
+                <img class="" src="static/img/cake.jpg" alt="">
+                <br>
+                <div class="text-xl text-center">
+                    CAKE NAME
+                </div>
+            </div>
+            <div class="m-4">
+                <img class="" src="static/img/cake.jpg" alt="">
+                <br>
+                <div class="text-xl text-center">
+                    CAKE NAME
+                </div>
+            </div>
+            <div class="m-4">
+                <img class="" src="static/img/cake.jpg" alt="">
+                <br>
+                <div class="text-xl text-center">
+                    CAKE NAME
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <script>
+        const menu = document.getElementById('menu');
+        const toggle = () => menu.classList.toggle("hidden");
+    </script>
+</body>
+</html>
